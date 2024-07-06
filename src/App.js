@@ -90,7 +90,7 @@ function App() {
       <AppNav bootstrapDarkMode={bootstrapDarkMode}></AppNav>
       <Message message={message} ></Message>
         <Routes>
-          <Route path='/' element={<TextForm head="This is a Application of text analyzer" mode={switchDarkMode} darkMode={darkMode} bootstrapDarkMode={bootstrapDarkMode} darkModeButton={darkModeButton} showMessage={showMessage}
+          <Route path='/' element={<TextForm head="This is a Application of text Analyser" mode={switchDarkMode} darkMode={darkMode} bootstrapDarkMode={bootstrapDarkMode} darkModeButton={darkModeButton} showMessage={showMessage}
           changeColor={changeColor}/>} />
 
           <Route path='/about' element={<About/>} />
