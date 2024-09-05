@@ -1,5 +1,5 @@
 import React from 'react'
-import creator from '../assets/image/builtIn/creator.png'
+import creator from './creator.png'
 export default function Footer() {
   return (
     <div>
