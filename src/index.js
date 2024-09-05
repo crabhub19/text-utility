@@ -7,7 +7,10 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+    {/* The rest of your app goes here */}
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
 
