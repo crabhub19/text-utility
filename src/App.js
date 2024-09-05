@@ -11,7 +11,6 @@ import AppNav from './components/AppNav';
 import TextForm from './components/TextForm';
 import Message from './components/Message';
 import About from './components/About';
-import Footer from './components/Footer';
 
 
 function App() {
@@ -95,9 +94,7 @@ function App() {
 
           <Route path='/about' element={<About/>} />
         </Routes>
-        <Footer></Footer>
       </BrowserRouter>
-      
       </>
 
   );
