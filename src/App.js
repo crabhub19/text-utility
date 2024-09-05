@@ -95,6 +95,7 @@ function App() {
 
           <Route path='/about' element={<About/>} />
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
       
       </>
