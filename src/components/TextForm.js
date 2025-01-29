@@ -120,7 +120,7 @@ export default function TextForm(props) {
         <button className='btn btn-primary p-3' onClick={()=>{props.changeColor('primary')}}></button>
         </div>
         <div className=" my-3 p-0">
-            <textarea className={`form-control ${props.bootstrapDarkMode === 'dark' ? 'text-white':'text-dark'} bg-${props.bootstrapDarkMode}`}  value={text} onChange={textOnChange}  id="floatingTextarea" rows="6"></textarea>
+            <textarea className={`form-control bg-${props.bootstrapDarkMode}`}  value={text} onChange={textOnChange}  id="floatingTextarea" rows="6"></textarea>
         </div>
         <button disabled={text.length === 0} className='btn btn-warning m-1' onClick={lowerCase}>convertToLowercase</button>
         <button disabled={text.length === 0} className='btn btn-primary m-1' onClick={reverseCase}>reverseTheText</button>
