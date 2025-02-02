@@ -110,7 +110,6 @@ export default function TextForm(props) {
         <h1 className='my-3'>{props.head}</h1>
         <button onClick={props.mode} className={`btn btn-outline-${props.bootstrapDarkMode === 'dark' ? 'light' : 'dark'} rounded-0`}>Switch to {props.darkModeButton} mode</button>
         <div className='btn-group ms-5' role="group">
-
         <button className='btn btn-light p-3 ms-1' onClick={()=>{props.changeColor('light')}}></button>
         <button className='btn btn-secondary p-3' onClick={()=>{props.changeColor('secondary')}}></button>
         <button className='btn btn-danger p-3' onClick={()=>{props.changeColor('danger')}}></button>
@@ -120,7 +119,7 @@ export default function TextForm(props) {
         <button className='btn btn-primary p-3' onClick={()=>{props.changeColor('primary')}}></button>
         </div>
         <div className=" my-3 p-0">
-            <textarea className={`form-control bg-${props.bootstrapDarkMode}`}  value={text} onChange={textOnChange}  id="floatingTextarea" rows="6"></textarea>
+            <textarea className={`form-control ${props.bootstrapDarkMode === 'dark' ? 'text-white' : 'text-black'} bg-${props.bootstrapDarkMode}`}  value={text} onChange={textOnChange}  id="floatingTextarea" rows="6"></textarea>
         </div>
         <button disabled={text.length === 0} className='btn btn-warning m-1' onClick={lowerCase}>convertToLowercase</button>
         <button disabled={text.length === 0} className='btn btn-primary m-1' onClick={reverseCase}>reverseTheText</button>
